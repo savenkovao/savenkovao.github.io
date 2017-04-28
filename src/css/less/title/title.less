@@ -1,0 +1,29 @@
+.title-h1 {
+	font-size: 48px;
+	font-weight: 700;
+}
+
+.title-h2 {
+	font-size: 48px;
+	font-weight: 700;
+}
+
+
+
+
+
+.hr-line {
+	display: inline-block;
+	margin-bottom: 25px;
+	position: relative;
+
+	&::before{
+		content: '';
+		width: 115%;
+		height: 4px;
+		background-image: linear-gradient(to right, #020bc4 0%, #008bcf 100%);
+		position: absolute;
+		left: 0;
+		bottom: -25px;
+	}
+}

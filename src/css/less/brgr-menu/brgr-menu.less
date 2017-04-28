@@ -1,0 +1,47 @@
+.brgr-menu{
+	display: block;
+	position: fixed;
+	display: inline-block;
+	cursor: pointer;		
+	z-index: 2;	
+
+	@media @tablet{
+		display: none;
+	}
+
+}
+
+.brgr-menu__stick {
+	display: block;
+	height: 16%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	transition: all 0.1s linear;
+	
+	@media @tablet{
+		display: none;		
+	}
+	
+}
+.stick-1{
+	top: 0;
+	transform-origin: 0% 0% 0;
+}
+.stick-2{
+	top: ~"calc(50% - 8%)";
+}
+.stick-3{
+	bottom: 0;
+	transform-origin: 0% 100% 0;
+}
+
+
+.stick-1-active{
+	transform: rotate(45deg) translateY(-4.5px) translateX(7px); 
+}
+.stick-3-active{
+	transform: rotate(-45deg) translateX(6.5px) translateY(4.5px); 
+}
+
+

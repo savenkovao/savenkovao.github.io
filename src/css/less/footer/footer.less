@@ -1,0 +1,80 @@
+.footer {
+	padding: 105px 0;
+}
+
+
+.footer-tel {
+	text-align: center;
+}
+.footer-tel__numb {
+	position: relative;
+	padding-left: 53px;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+	text-decoration: none;
+	color: #fff;
+
+	&::before {
+		content: '';
+		width: 28px;
+		height: 28px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-image: url(@phone-icn);
+	}
+}
+
+.footer-mail {
+	margin-top: 47px;
+	text-align: center;
+}
+
+.footer-mail__txt {
+	position: relative;
+	padding-left: 70px;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+	text-decoration: none;
+	color: #fff;
+
+	&::before {
+		content: '';
+		width: 35px;
+		height: 28px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-image: url(@mail-icn);
+	}
+}
+
+.footer-lnk{
+	margin-top: 72px;
+	text-align: center;
+}
+
+.footer-lnk__itm {
+	display: inline-block;
+	margin-right: 30px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.footer-lnk__link {
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	background-size: 100%;
+	background-image: url(@github-icn);
+	background-size: cover;
+
+	
+
+	&.linkedin {}
+	&.skype {}
+	&.github {}
+	&.facebook {}
+}

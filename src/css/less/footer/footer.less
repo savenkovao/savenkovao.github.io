@@ -1,5 +1,9 @@
 .footer {
-	padding: 105px 0;
+	padding: 65px 0;
+
+	@media @tablet {		
+		padding: 105px 0;
+	}
 }
 
 
@@ -8,11 +12,21 @@
 }
 .footer-tel__numb {
 	position: relative;
-	padding-left: 53px;
+	padding-left: 45px;
 	font-family: 'Quicksand', sans-serif;
-	font-size: 18px;
+	font-size: 16px;
 	text-decoration: none;
 	color: #fff;
+
+	@media @tablet {
+		font-size: 18px;
+		padding-left: 53px;
+	}
+
+	&:hover::after {
+		box-shadow: 0px 0px 51px 9px #0085ce;
+		background-color: rgba(0, 133, 206, 0.19);
+	}
 
 	&::before {
 		content: '';
@@ -21,23 +35,49 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		background-image: url(@phone-icn);
+		background-image: url(@social-icn);
+    background-size: 175px;
+    background-repeat: no-repeat;
+    background-position: -108px -34px;
+		transition: all 0.2s linear;
+	}
+
+	&::after {
+		content: '';
+		width: 0;
+		height: 0;
+		border-radius: 50%;
+		position: absolute;
+		top: 12px;
+		left: 12px;
+		transition: all 0.2s linear;
 	}
 }
-
-.footer-mail {
+.footer-mail,
+.footer-skype {
 	margin-top: 47px;
 	text-align: center;
 }
 
-.footer-mail__txt {
+.footer-mail__txt,
+.footer-skype__txt {
 	position: relative;
-	padding-left: 70px;
+	padding-left: 50px;
 	font-family: 'Quicksand', sans-serif;
-	font-size: 18px;
+	font-size: 16px;
 	text-decoration: none;
 	color: #fff;
 
+	@media @tablet {
+		padding-left: 70px;
+		font-size: 18px;
+	}
+	
+	&:hover::after {
+		box-shadow: 0px 0px 51px 9px #0085ce;
+		background-color: rgba(0, 133, 206, 0.19);
+	}
+	
 	&::before {
 		content: '';
 		width: 35px;
@@ -45,13 +85,49 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		background-image: url(@mail-icn);
+		background-image: url(@social-icn);
+    background-repeat: no-repeat;
+		transition: all 0.2s linear;
+	}
+
+	&::after {
+		content: '';
+		width: 0;
+		height: 0;
+		border-radius: 50%;
+		position: absolute;
+		top: 12px;
+		left: 15px;
+		transition: all 0.2s linear;
 	}
 }
 
+.footer-mail__txt {
+	&::before {
+    background-size: 210px;
+    background-position: -171px 0px;
+	}
+}
+.footer-skype__txt {
+	&::before {
+		top: -6px;
+		width: 36px;
+		height: 36px;
+    background-size: 220px;
+    background-position: -135px 0px;
+	}
+}
+
+
+
+
 .footer-lnk{
-	margin-top: 72px;
+	margin-top: 60px;
 	text-align: center;
+
+	@media @tablet {
+		margin-top: 72px;
+	}
 }
 
 .footer-lnk__itm {
@@ -67,14 +143,49 @@
 	display: inline-block;
 	width: 36px;
 	height: 36px;
-	background-size: 100%;
-	background-image: url(@github-icn);
-	background-size: cover;
+	position: relative;
 
-	
+	background-image: url(@social-icn);
+	background-size: 221px;
+  background-repeat: no-repeat;
+	// transition: all 0.2s linear;
 
-	&.linkedin {}
-	&.skype {}
-	&.github {}
-	&.facebook {}
+
+	&.linkedin {
+	  background-position: -6px 0;
+
+	  &:hover {
+	  	background-position: -6px -44px;
+	  }
+
+	}
+	&.github {
+		background-position: -49px 0;
+
+		&:hover {
+			background-position: -49px -44px;
+		}
+	}
+	&.facebook {
+		background-position: -92px 0;
+
+		&:hover {
+			background-position: -92px -44px;
+		}
+	}
+
+	// &:hover::after {
+	// 	// box-shadow: 0px 0px 38px 14px rgb(0, 133, 206);
+	// }
+
+	// &::after {
+	// 	content: '';
+	// 	width: 0;
+	// 	height: 0;
+	// 	position: absolute;
+	// 	top: 50%;
+	// 	left: 50%;
+	// 	border-radius: 50%;
+	// 	transition: all 0.2s linear;
+	// }
 }

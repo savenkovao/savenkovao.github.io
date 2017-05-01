@@ -1,3 +1,19 @@
+#brgr-menu {
+	&.active {
+		.stick-1{
+			transform: rotate(45deg) translateY(-4.5px) translateX(7px); 
+		}
+
+		.stick-2{
+			display: none;
+		}
+
+		.stick-3{
+			transform: rotate(-45deg) translateX(6.5px) translateY(4.5px); 
+		}		
+	}
+}
+
 .brgr-menu{
 	display: block;
 	position: fixed;
@@ -8,6 +24,7 @@
 	@media @tablet{
 		display: none;
 	}
+
 
 }
 
@@ -37,11 +54,5 @@
 }
 
 
-.stick-1-active{
-	transform: rotate(45deg) translateY(-4.5px) translateX(7px); 
-}
-.stick-3-active{
-	transform: rotate(-45deg) translateX(6.5px) translateY(4.5px); 
-}
 
 

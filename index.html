@@ -4,9 +4,9 @@
 	<meta charset="UTF-8">
 	<title>Artem Savienkov | Junior Front End Developer</title>
 
-	<meta name="keywords" content="">
-	<meta name="description" content="">
-	<meta name="author" content="">
+	<meta name="keywords" content="Artem Savienkov junior front end developer html5 css3 javascript jquery wordpress photoshop avocode git">
+	<meta name="description" content=">Artem Savienkov | Junior Front End Developer - Personal website">
+	<meta name="author" content="Artem Savienkov">
 
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="src/css/style.css">
@@ -34,27 +34,30 @@
 </head>
 <body>
 	<div class="body_bg">
-		<header>
+		<header id="intro">
 			<div class="wrapper">
 				<div class="heading">
 
 					<div class="header-menu">
-						<div id="brgr-menu">
-							<div data-meta-node class="brgr-menu header-brgr-menu_pos">					
-								<div class="brgr-menu__stick header-brgr-menu__stick stick-1"></div>
-								<div class="brgr-menu__stick header-brgr-menu__stick stick-2"></div>
-								<div class="brgr-menu__stick header-brgr-menu__stick stick-3"></div>
+						<nav>
+							<div id="brgr-menu">
+								<div data-meta-node class="brgr-menu header-brgr-menu_pos">					
+									<div class="brgr-menu__stick header-brgr-menu__stick stick-1"></div>
+									<div class="brgr-menu__stick header-brgr-menu__stick stick-2"></div>
+									<div class="brgr-menu__stick header-brgr-menu__stick stick-3"></div>
+								</div>
 							</div>
-						</div>
-
-						<div id="header-menu" class="menu">
-							<ul class="menu__list">
-								<li class="menu__item"><a href="#skills" class="menu__link">Skills</a></li>
-								<li class="menu__item"><a href="#education" class="menu__link">Education</a></li>
-								<li class="menu__item"><a href="#experience" class="menu__link">Experience</a></li>
-								<li class="menu__item"><a href="#contacts" class="menu__link">Contacts</a></li>
-							</ul>
-						</div>
+							
+							<div id="header-menu" class="menu">
+								<ul class="menu__list">
+									<li class="menu__item"><a href="#intro" class="menu__link">Intro</a></li>
+									<li class="menu__item"><a href="#skills" class="menu__link">Skills</a></li>
+									<li class="menu__item"><a href="#education" class="menu__link">Education</a></li>
+									<li class="menu__item"><a href="#experience" class="menu__link">Experience</a></li>
+									<li class="menu__item"><a href="#contacts" class="menu__link">Contacts</a></li>
+								</ul>
+							</div>
+						</nav>
 					</div>
 		
 					<div class="heading-txt">
@@ -82,6 +85,18 @@
 				</div>
 			</div>
 		</header>
+
+		<section>
+			<nav id="dot-nav" class="dot-nav">
+				<ul class="dot-nav__cont">
+					<li class="dot-nav__item"><a data-id="intro" href="#intro" class="dot-nav__link">Intro</a></li>
+					<li class="dot-nav__item"><a data-id="skills" href="#skills" class="dot-nav__link">Skills</a></li>
+					<li class="dot-nav__item"><a data-id="education" href="#education" class="dot-nav__link">Education</a></li>
+					<li class="dot-nav__item"><a data-id="experience" href="#experience" class="dot-nav__link">Experience</a></li>
+					<li class="dot-nav__item"><a data-id="contacts" href="#contacts" class="dot-nav__link">Contacts</a></li>
+				</ul>
+			</nav>
+		</section>
 		
 		<section id="skills">
 			<div class="skills-bg">
@@ -139,10 +154,6 @@
 							<img src="src/img/dsg/track.png" alt="Educatuion track" class="edu-track__track">
 							<img src="src/img/dsg/track-m.png" alt="Educatuion track" class="edu-track__track-m">
 						</div>
-
-						<!-- <span class="edu-track__2010">2010</span> -->
-						<!-- <span class="edu-track__2015">2015</span> -->
-						<!-- <span class="edu-track__2016">2016</span> -->
 						
 						<div class="edu-track__2010-txt">
 							<h4 class="edu-track__hdr">Odessa State Academy of Civil Engeneering and Architecture</h4>
@@ -384,8 +395,7 @@
 			</div>			
 		</section>
 		
-		<aside></aside>
-		
+
 		<footer id="contacts">
 			
 			<div class="wrapper">
@@ -422,11 +432,11 @@
 	</div>
 
 
-	<script src="src/js/main.js"></script>
 
-	<!-- jQuery -->
+	<!-- jQuery lib -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
+	<script src="src/js/main.js"></script>
 
 
 </body>

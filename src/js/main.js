@@ -31,6 +31,7 @@
 		count = 0;
 	}
 
+// get clicked element
 	function getTarget(event) {
 		var target = event.target;
 		var currentTarget = event.currentTarget;
@@ -47,11 +48,13 @@
 		return;
 	}
 
+
 // age change
 	var age = document.getElementById('age');
 	var year = new Date();
 	var birthday = new Date(1992,09,13);
 	age.innerHTML = Math.floor( (year - birthday) / (1000 * 60 * 60 * 24 * 365) );
+
 
 // experience block slider
 	var slider = document.getElementById('slider');
@@ -99,31 +102,51 @@
 		prevSliderWidth = sliderWidth;
 	}
 
+// fixed navigation
+
+	var dotNav = document.getElementById('dot-nav');
+	var navButtons = document.querySelectorAll('.dot-nav__link');
+
+	window.addEventListener('scroll', highlightNavbutton, false);
+	dotNav.addEventListener('scroll', highlightNavbutton, false);
+	highlightNavbutton ();
+	function highlightNavbutton () {
+
+		navButtons.forEach(function(item, i, arr) {
+			item.classList.remove('active');			
+
+			var activeBlock = document.getElementById( item.getAttribute('data-id') +'' );
+
+			// all blocks
+			if ( window.pageYOffset >= activeBlock.offsetTop && window.pageYOffset < (activeBlock.offsetTop + activeBlock.clientHeight) ) {
+				item.classList.add('active');	
+			}
+
+			// last block
+			if(window.pageYOffset >= (document.body.scrollHeight - document.documentElement.clientHeight - 1) && (i == arr.length-1) ) {
+				arr[i-1].classList.remove('active');
+				item.classList.add('active');
+			} 				
+
+		});
+
+	}
 
 
 
+// page scroll animation jQuery
 
-
-
-
-
-
-
-// page scroll animation
-
-	// $("#header-menu").on("click","a", function (event) {
+	$("#dot-nav").on("click","a", function (event) {
 		
-	// 	var id = $(this).attr('href');
+		var id = $(this).attr('href');
 		
-	// 	if ( id.match(/#\w/g) ){
-	// 		event.preventDefault();
-	// 		var top = $(id).offset().top;
-	// 	}
+		if ( id.match(/#\w/g) ){
+			event.preventDefault();
+			var top = $(id).offset().top;
+		}
 
-	// 	$('body,html').animate({scrollTop: top}, 1500);
-	// });
-
-
+		$('body,html').animate({scrollTop: top}, 500);
+	});
 
 	
 })();

@@ -37,13 +37,32 @@
 		<header>
 			<div class="wrapper">
 				<div class="heading">
+
+					<div class="header-menu">
+						<div id="brgr-menu">
+							<div data-meta-node class="brgr-menu header-brgr-menu_pos">					
+								<div class="brgr-menu__stick header-brgr-menu__stick stick-1"></div>
+								<div class="brgr-menu__stick header-brgr-menu__stick stick-2"></div>
+								<div class="brgr-menu__stick header-brgr-menu__stick stick-3"></div>
+							</div>
+						</div>
+
+						<div id="header-menu" class="menu">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="#skills" class="menu__link">Skills</a></li>
+								<li class="menu__item"><a href="#education" class="menu__link">Education</a></li>
+								<li class="menu__item"><a href="#experience" class="menu__link">Experience</a></li>
+								<li class="menu__item"><a href="#contacts" class="menu__link">Contacts</a></li>
+							</ul>
+						</div>
+					</div>
 		
 					<div class="heading-txt">
 						<h1 class="heading-ttl title-h1">HI! I’m Artem Savienkov</h1>
 						
 						<div class="heading-sub">
 							<p class="heading-sub__pos">Junior front-end developer</p>
-							<p class="heading-sub__age">Odessa, 24 y.o.</p>
+							<p class="heading-sub__age">Odessa, <span id="age"></span> y.o.</p>
 						</div>
 						
 						<div class="heading-dscr">
@@ -64,7 +83,7 @@
 			</div>
 		</header>
 		
-		<section>
+		<section id="skills">
 			<div class="skills-bg">
 				<div class="wrapper">
 					<div class="skills">
@@ -110,7 +129,7 @@
 
 
 
-		<section>
+		<section id="education">
 			<div class="wrapper">
 				<div class="edu">
 					<h2 class="edu-ttl title-h2 hr-line">Eduacation</h2>
@@ -145,23 +164,25 @@
 
 
 
-		<section>
+		<section id="experience">
 			<div class="exp-bg">
 				<div class="wrapper">
 					<div class="exp">
 						<h2 class="edu-ttl title-h2 hr-line">Experience</h2>
 
 						<div class="exp-slider">
-							<div class="slider">
+
+
+
+							<div id="slider" class="slider">
 							
-								<div class="slider-inner">
+								<div id="slider__inner" class="slider-inner">
 
 									<div class="slider-item">
 
 										<div class="slider-item__img-cnt">
-											<a href="http://crossfood.od.ua/" target="blank">
-												<img src="src/img/cnt/experience/crossfood.png" alt="CrossFood screenshot" class="slider-item__img">
-											</a>
+											<a class="slider-item__img-lnk" href="http://crossfood.od.ua/" target="blank"></a>
+											<img src="src/img/cnt/experience/crossfood.png" alt="CrossFood screenshot" class="slider-item__img">
 										</div>
 										
 										<div class="slider-item__txt-cnt">
@@ -180,17 +201,179 @@
 										</div>
 
 										<div class="slider-item__img-cnt-m">
-											<a href="http://crossfood.od.ua/" target="blank">
-												<img src="src/img/cnt/experience/crossfood.png" alt="CrossFood screenshot" class="slider-item__img">
-											</a>
+											<a class="slider-item__img-lnk" href="http://crossfood.od.ua/" target="blank"></a>
+											<img src="src/img/cnt/experience/crossfood.png" alt="CrossFood screenshot" class="slider-item__img">
 										</div>										
+									</div>
+
+									<div class="slider-item">
+
+										<div class="slider-item__img-cnt">
+											<a class="slider-item__img-lnk" href="https://savenkovao.github.io/attract_shop/" target="blank"></a>
+											<img src="src/img/cnt/experience/attract.png" alt="Attract_shop screenshot" class="slider-item__img">	
+										</div>
+										
+										<div class="slider-item__txt-cnt">
+
+											<h3 class="slider-item__hdr">
+												<a href="https://savenkovao.github.io/attract_shop/" target="blank">Attract_shop page</a>
+											</h3>
+
+											<ul class="slider-item__list">
+												<li class="slider-item__list-item"><strong>Description:</strong> Pet project. Website with dynamic loading of data and filter on page</li>
+												<li class="slider-item__list-item"><strong>Responsibilities:</strong>  Converting PSD mockup to HTML</li>
+												<li class="slider-item__list-item"><strong>Languages:</strong> HTML5, CSS3, LESS, JavaScript, jQuery</li>
+												<li class="slider-item__list-item"><strong>Environment:</strong> Sublime Text 3, Google Chrome, Photoshop, Avocode</li>
+												<li class="slider-item__list-item"><strong>Template engine:</strong> John Resig JavaScript Micro-Templating</li>
+											</ul>
+										</div>
+
+										<div class="slider-item__img-cnt-m">
+											<a class="slider-item__img-lnk" href="https://savenkovao.github.io/attract_shop/" target="blank"></a>
+											<img src="src/img/cnt/experience/attract.png" alt="Attract_shop screenshot" class="slider-item__img">	
+										</div>									
+									</div>
+
+									<div class="slider-item">
+
+										<div class="slider-item__img-cnt">
+											<a class="slider-item__img-lnk" href="https://savenkovao.github.io/jack_newman/" target="blank"></a>
+											<img src="src/img/cnt/experience/JN.png" alt="Jack_Newman screenshot" class="slider-item__img">
+										</div>
+										
+										<div class="slider-item__txt-cnt">
+
+											<h3 class="slider-item__hdr">
+												<a href="https://savenkovao.github.io/jack_newman/" target="blank">Jack Newman landing page</a>
+											</h3>
+
+											<ul class="slider-item__list">
+												<li class="slider-item__list-item"><strong>Description:</strong> Pet project. Website for photographer</li>
+												<li class="slider-item__list-item"><strong>Responsibilities:</strong>  Converting PSD mockup to HTML</li>
+												<li class="slider-item__list-item"><strong>Languages:</strong> HTML5, CSS3, LESS, JavaScript</li>
+												<li class="slider-item__list-item"><strong>Environment:</strong> Sublime Text 3, Google Chrome, Photoshop, Avocode</li>
+											</ul>
+										</div>
+
+										<div class="slider-item__img-cnt-m">
+											<a class="slider-item__img-lnk" href="https://savenkovao.github.io/jack_newman/" target="blank"></a>
+											<img src="src/img/cnt/experience/JN.png" alt="Jack_Newman screenshot" class="slider-item__img">
+										</div>									
+									</div>
+
+									<div class="slider-item">
+
+										<div class="slider-item__img-cnt">
+											<a class="slider-item__img-lnk" href="http://studprofkomogasa.org.ua/" target="blank"></a>
+											<img src="src/img/cnt/experience/studprofkom.png" alt="Studprofkomogasa screenshot" class="slider-item__img">
+										</div>
+										
+										<div class="slider-item__txt-cnt">
+
+											<h3 class="slider-item__hdr">
+												<a href="http://studprofkomogasa.org.ua/" target="blank">Studprofkomogasa website</a>
+											</h3>
+
+											<ul class="slider-item__list">
+												<li class="slider-item__list-item"><strong>Description:</strong> Website for Trade union of students of OSACEA</li>
+												<li class="slider-item__list-item"><strong>Responsibilities:</strong> Website development</li>
+												<li class="slider-item__list-item"><strong>Languages:</strong> HTML5, CSS3, LESS, JavaScript</li>
+												<li class="slider-item__list-item"><strong>Environment:</strong> Sublime Text 3, Bootstrap 3, Google Chrome, Photoshop</li>
+											</ul>
+										</div>
+
+										<div class="slider-item__img-cnt-m">
+											<a class="slider-item__img-lnk" href="http://studprofkomogasa.org.ua/" target="blank"></a>
+											<img src="src/img/cnt/experience/studprofkom.png" alt="Studprofkomogasa screenshot" class="slider-item__img">
+										</div>									
+									</div>
+
+									<div class="slider-item">
+
+										<div class="slider-item__img-cnt">
+											<a class="slider-item__img-lnk" href="https://savenkovao.github.io/intrend/" target="blank"></a>
+											<img src="src/img/cnt/experience/intrend.png" alt="Intrend screenshot" class="slider-item__img">
+										</div>
+										
+										<div class="slider-item__txt-cnt">
+
+											<h3 class="slider-item__hdr">
+												<a href="https://savenkovao.github.io/intrend/" target="blank">Intrend page</a>
+											</h3>
+
+											<ul class="slider-item__list">
+												<li class="slider-item__list-item"><strong>Description:</strong> Pet project. Page of online shop</li>
+												<li class="slider-item__list-item"><strong>Responsibilities:</strong> Converting PSD mockup to HTML</li>
+												<li class="slider-item__list-item"><strong>Languages:</strong> HTML5, CSS3, LESS, jQuery</li>
+												<li class="slider-item__list-item"><strong>Environment:</strong> Sublime Text 3, Bootstrap 3, Google Chrome, Photoshop, Avocode</li>
+											</ul>
+										</div>
+
+										<div class="slider-item__img-cnt-m">
+											<a class="slider-item__img-lnk" href="https://savenkovao.github.io/intrend/" target="blank"></a>
+											<img src="src/img/cnt/experience/intrend.png" alt="Intrend screenshot" class="slider-item__img">
+										</div>									
+									</div>
+
+									<div class="slider-item">
+
+										<div class="slider-item__img-cnt">
+											<a class="slider-item__img-lnk" href="https://savenkovao.github.io/viz_company/" target="blank"></a>
+											<img src="src/img/cnt/experience/viz-comp.png" alt="Viz_comp screenshot" class="slider-item__img">
+										</div>
+										
+										<div class="slider-item__txt-cnt">
+
+											<h3 class="slider-item__hdr">
+												<a href="https://savenkovao.github.io/viz_company/" target="blank">Viz_company page</a>
+											</h3>
+
+											<ul class="slider-item__list">
+												<li class="slider-item__list-item"><strong>Description:</strong> Pet project. Page for wedding website</li>
+												<li class="slider-item__list-item"><strong>Responsibilities:</strong> Converting PSD mockup to HTML</li>
+												<li class="slider-item__list-item"><strong>Languages:</strong> HTML5, CSS3, LESS, jQuery</li>
+												<li class="slider-item__list-item"><strong>Environment:</strong> Sublime Text 3, Bootstrap 3, Google Chrome, Photoshop, Avocode</li>
+											</ul>
+										</div>
+
+										<div class="slider-item__img-cnt-m">
+											<a class="slider-item__img-lnk" href="https://savenkovao.github.io/viz_company/" target="blank"></a>
+											<img src="src/img/cnt/experience/viz-comp.png" alt="Viz_comp screenshot" class="slider-item__img">
+										</div>										
+									</div>
+
+									<div class="slider-item">
+
+										<div class="slider-item__img-cnt">
+											<a class="slider-item__img-lnk" href="https://savenkovao.github.io/eagle/" target="blank"></a>
+											<img src="src/img/cnt/experience/eagle.png" alt="Eagle screenshot" class="slider-item__img">
+										</div>
+										
+										<div class="slider-item__txt-cnt">
+
+											<h3 class="slider-item__hdr">
+												<a href="https://savenkovao.github.io/eagle/" target="blank">Eagle page</a>
+											</h3>
+
+											<ul class="slider-item__list">
+												<li class="slider-item__list-item"><strong>Description:</strong> School project. Landing page</li>
+												<li class="slider-item__list-item"><strong>Responsibilities:</strong> Converting PSD mockup to HTML</li>
+												<li class="slider-item__list-item"><strong>Languages:</strong> HTML5, CSS3</li>
+												<li class="slider-item__list-item"><strong>Environment:</strong> Sublime Text 3, Google Chrome, Avocode</li>
+											</ul>
+										</div>
+
+										<div class="slider-item__img-cnt-m">
+											<a class="slider-item__img-lnk" href="https://savenkovao.github.io/eagle/" target="blank"></a>
+											<img src="src/img/cnt/experience/eagle.png" alt="Eagle screenshot" class="slider-item__img">
+										</div>									
 									</div>
 
 							
 								</div>
 							
-								<div class="slider_arrw left"></div>
-								<div class="slider_arrw right"></div>
+								<div id="slider-arrw-l" data-direct='left' class="slider_arrw left"></div>
+								<div id="slider-arrw-r" data-direct='right' class="slider_arrw right"></div>
 							</div>
 						</div>
 
@@ -203,7 +386,7 @@
 		
 		<aside></aside>
 		
-		<footer>
+		<footer id="contacts">
 			
 			<div class="wrapper">
 				<div class="footer">

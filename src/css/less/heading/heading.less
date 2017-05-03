@@ -7,7 +7,7 @@
 	}
 
 	@media @laptop {
-		padding: 120px 0 120px 7.08%;
+		padding: 120px 7.08% 120px 0;
 	}
 }
 .heading-txt {
@@ -66,13 +66,14 @@
 .heading-img {
 	max-width: 350px;
 	margin: 0 auto;
-	margin-top: 70px;
+	margin-top: 40px;
 	
 	@media @tablet {
 		display: inline-block;
-		vertical-align: top;
 		width: 38.11%;
 		max-width: 425px;		
+		margin-top: 0;
+		vertical-align: top;
 	}
 }
 .heading-img__img {
@@ -111,13 +112,20 @@
   background-color: rgba(0, 0, 0, 0.9);
   // overflow: scroll;
   // transition: background-color 2s linear;
+  @media @tablet {
+  	display: none !important;
+  }
 }
 
-.menu__list{
+.menu__cont {
 	position: absolute;
 	top: 50%;
 	left:50%;
-	transform: translate(-50%, -50%);
+	width: 100%;
+	transform: translate(-50%, -50%);	
+}
+
+.menu__list{
 
 }
 

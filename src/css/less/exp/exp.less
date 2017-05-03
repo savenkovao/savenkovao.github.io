@@ -8,7 +8,11 @@
 	padding: 70px 0 90px;
 
 	@media @tablet {
-		padding: 55px 7.08% 120px;
+		padding: 55px 3% 120px;
+	}
+
+	@media @laptop {
+		padding: 55px 7.08% 120px 0;
 	}
 }
 
@@ -16,7 +20,7 @@
 	margin: 65px 0 0;	
 
 	@media @tablet {
-		margin: 120px 25px 0 25px;		
+		margin: 120px 65px 0 65px;		
 	}
 }
 .slider{
@@ -81,6 +85,8 @@
 
 .slider-item__img-cnt-m {
 	position: relative;
+	max-width: 450px;
+  margin: 0 auto;
 	margin-top: 35px;
 
 	&:hover .slider-item__img-lnk {

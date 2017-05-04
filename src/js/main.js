@@ -65,7 +65,7 @@
 	var arrRight = document.getElementById('slider-arrw-r');
 	var slItemsNumber = slides.length;
 	var slItemMargin = 0;
-	var prevSliderWidth;
+	var prevSliderWidth = slider.clientWidth;
 
 	arrLeft.addEventListener("click", browse, false);
 	arrRight.addEventListener("click", browse, false);

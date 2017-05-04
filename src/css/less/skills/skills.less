@@ -1,8 +1,18 @@
 .skills-bg {
-	background-image: url(@skills-bg);
+	background-image: url(@skills-bg-xs);
 	background-repeat: no-repeat;
 	background-size: cover;
-  background-position: top;  
+	background-position: center;
+	
+  @media @tablet {
+  	background-image: url(@skills-bg-sm);
+  }
+  @media @laptop {
+  	background-image: url(@skills-bg-md);
+  }
+  @media @4k {
+  	background-image: url(@skills-bg-lg);
+  }
 }
 
 

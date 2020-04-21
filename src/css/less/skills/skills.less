@@ -74,6 +74,7 @@
 
 	& span {
 		position: absolute;
+		width: 100%;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
@@ -107,6 +108,8 @@
 	font-size: 15px;
 	font-weight: 300;
 	// line-height: 22px;
+	display: flex;
+    flex-wrap: wrap;
 
 	@media @tablet {
 		font-size: 16px;
@@ -118,18 +121,14 @@
 	padding-left: 35px;
 	margin-top: 25px;
 
-	&:first-child {
-		margin-top: 0;
-	}
-
 	&::before {
 		content: '';
 		display: block;
 		width: 16px;
 		height: 17px;
-    position: absolute;
-    top: 0;
-    left: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
 		background-image: url(@marker-1);
 		background-repeat: no-repeat;
 		background-size: contain;
@@ -137,6 +136,9 @@
 	}
 
 	@media @tablet {
+		min-width: 25%;
+		width: 25%;
+		padding-right: 15px;
 		margin-top: 20px;
 	}
 }
